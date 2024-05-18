@@ -7,19 +7,25 @@ import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import StyleSheet from "./components/StyleSheet";
+import Inline from "./components/Inline";
+
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 
 function App() {
   return (
     <div className="App">
-      {
-        /* <FunctionClick/>
-            <ClassClick/> */
-        // <EventBind/>
-        // <ParentComponent />
-        // <UserGreeting />
-        // <NameList />
-        <StyleSheet primary={true} />
-      }
+      {/* // <FunctionClick />
+      // <ClassClick />
+      // <EventBind />
+      // <ParentComponent />
+      // <UserGreeting />
+      // <NameList />
+      // <StyleSheet primary={true} />
+      // <Inline /> */}
+      <Inline />
+      <h1 className="error">Error</h1>
+      <h1 className={styles}>Success</h1>
     </div>
   );
 }

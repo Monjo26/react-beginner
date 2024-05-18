@@ -6,17 +6,19 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
+import StyleSheet from "./components/StyleSheet";
 
 function App() {
   return (
     <div className="App">
       {
         /* <FunctionClick/>
-      <ClassClick/> */
+            <ClassClick/> */
         // <EventBind/>
         // <ParentComponent />
         // <UserGreeting />
-        <NameList />
+        // <NameList />
+        <StyleSheet primary={true} />
       }
     </div>
   );

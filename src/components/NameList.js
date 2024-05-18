@@ -1,22 +1,14 @@
 import React from "react";
 
+//https://codepen.io/gopinav/pen/gQpepq
 function NameList() {
-  const names = ["a", "b", "c"];
-  let nameList = names.map((name) => <h2>{name}</h2>);
-
-  return (
-    // <div>
-    //   <h1>{names[0]}</h1>
-    //   <h1>{names[1]}</h1>
-    //   <h1>{names[2]}</h1>
-    // </div>
-    <div>
-      {/* {names.map((name) => (
-        <h2>{name}</h2>
-      ))} */}
-      {nameList}
-    </div>
-  );
+  const names = ["Ramesh", "Ravi", "Alok", "Lalit"];
+  const nameList = names.map((name, index) => (
+    <h2 key={index}>
+      {index} {name}
+    </h2>
+  ));
+  return <div>{nameList}</div>;
 }
 
 export default NameList;

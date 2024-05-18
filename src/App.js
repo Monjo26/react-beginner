@@ -13,6 +13,7 @@ import "./appStyles.css";
 import styles from "./appStyles.module.css";
 
 import Form from "./components/Form";
+import LifeCycleA from "./components/LifeCycleA";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <Inline />
       <h1 className="error">Error</h1>
       <h1 className={styles}>Success</h1> */}
-      <Form />
+      {/* <Form /> */}
+      <LifeCycleA />
     </div>
   );
 }

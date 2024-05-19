@@ -73,17 +73,17 @@ function App() {
       {/* <ClickCounterTwo />
       <HoverCounterTwo />
       <User render={(isLoggedIn) => (isLoggedIn ? "You" : "Guest")} /> */}
-      <Counter
-        render={(count, incrementCount) => (
+      <Counter>
+        {(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      />
+      </Counter>
 
-      <Counter
-        render={(count, incrementCount) => (
+      <Counter>
+        {(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      />
+      </Counter>
     </div>
   );
 }

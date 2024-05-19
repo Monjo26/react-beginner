@@ -19,6 +19,7 @@ import Tables from "./components/Tables";
 import ParentComp from "./components/ParentComp";
 import ParentComp1 from "./components/ParentComp1";
 import ParentComp2 from "./components/ParentComp2";
+import RefsDemo from "./components/RefsDemo";
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
       {/* <Tables /> */}
       {/* <ParentComp /> */}
       {/* <ParentComp1 /> */}
-      <ParentComp2 />
+      {/* <ParentComp2 /> */}
+      <RefsDemo />
     </div>
   );
 }

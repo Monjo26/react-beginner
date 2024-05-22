@@ -13,6 +13,11 @@ import MouseContainer from "./components/useEffect/MouseContainer";
 import IntervalClassCounter from "./components/useEffect/IntervalClassCounter";
 import IntervalHookCounter from "./components/useEffect/IntervalHookCounter";
 import DataFetching from "./components/useEffect/DataFetching";
+import ComponentC from "./components/useContext/ComponentC";
+import React from "react";
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
@@ -30,7 +35,12 @@ function App() {
       {/* <MouseContainer /> */}
       {/* <IntervalClassCounter />
       <IntervalHookCounter /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      <UserContext.Provider value={"You"}>
+        <ChannelContext.Provider value={"codevolation"}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }

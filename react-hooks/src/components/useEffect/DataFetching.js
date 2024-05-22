@@ -18,15 +18,19 @@ function DataFetching() {
       });
   }, [idFromButtonClick]);
 
-  const handlClick = () => {
-    setIdFromButtonClick(id);
-  };
+  //   const handlClick =
 
   return (
     <div>
       <input type="text" value={id} onChange={(e) => setId(e.target.value)} />
-      <button onClick={handlClick}>Change</button>
-      <ul>${post.title}</ul>
+      <button
+        onClick={() => {
+          setIdFromButtonClick(id);
+        }}
+      >
+        Change
+      </button>
+      <ul>{post.title}</ul>
     </div>
   );
 }

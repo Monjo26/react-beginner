@@ -14,20 +14,38 @@ import IntervalClassCounter from "./components/useEffect/IntervalClassCounter";
 import IntervalHookCounter from "./components/useEffect/IntervalHookCounter";
 import DataFetching from "./components/useEffect/DataFetching";
 import ComponentC from "./components/useContext/ComponentC";
-import React from "react";
+import React, { useReducer } from "react";
 import CounterOne from "./components/useReducer/CounterOne";
 import CounterTwo from "./components/useReducer/CounterTwo";
 import CounterThree from "./components/useReducer/CounterThree";
+import ComponentA from "./components/useReducer/ComponentA";
+import ComponentB from "./components/useReducer/ComponentB";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 
+export const CountContext = React.createContext();
+
+const initialState = 0;
+const reducer = (state, action) => {
+  switch (action) {
+    case "increment":
+      return state + 1;
+    case "decrement":
+      return state - 1;
+    case "reset":
+      return initialState;
+    default:
+      return state;
+  }
+};
+
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="App">
       {/* <ClassCounter />
       <HookCounter /> */}
-
       {/* <HookCounterTwo /> */}
       {/* <HookCounterThree /> */}
       {/* <HookCounterFour /> */}
@@ -46,7 +64,15 @@ function App() {
       </UserContext.Provider> */}
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
-      <CounterThree />
+      {/* <CounterThree /> */}
+      <CountContext.Provider
+        value={{ countState: count, countDispatch: dispatch }}
+      >
+        Count-{count}
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+      </CountContext.Provider>
     </div>
   );
 }

@@ -82,11 +82,13 @@
 import React from "react";
 import "./App.css";
 import DataFetchingOne from "./components/useReducer/DataFetchingOne";
+import DataFetchingTwo from "./components/useReducer/DataFetchingTwo";
 
 function App() {
   return (
     <div className="App">
-      <DataFetchingOne />
+      {/* <DataFetchingOne /> */}
+      <DataFetchingTwo />
     </div>
   );
 }

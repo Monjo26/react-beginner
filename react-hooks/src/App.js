@@ -84,13 +84,15 @@ import "./App.css";
 import DataFetchingOne from "./components/useReducer/DataFetchingOne";
 import DataFetchingTwo from "./components/useReducer/DataFetchingTwo";
 import ParentComponent from "./components/useCallBack/ParentComponent";
+import Counter from "./components/useMemo/Counter";
 
 function App() {
   return (
     <div className="App">
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingTwo /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      <Counter />
     </div>
   );
 }

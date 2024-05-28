@@ -92,6 +92,7 @@ import DocTitleOne from "./components/custom/DocTitleOne";
 import DocTitleTwo from "./components/custom/DocTitleTwo";
 import CounterOne from "./components/custom/CounterOne";
 import CounterTwo from "./components/custom/CounterTwo";
+import UserForm from "./components/custom/UserForm";
 
 function App() {
   return (
@@ -105,8 +106,9 @@ function App() {
       <HookTimer /> */}
       {/* <DocTitleOne />
       <DocTitleTwo /> */}
-      <CounterOne />
-      <CounterTwo />
+      {/* <CounterOne />
+      <CounterTwo /> */}
+      <UserForm />
     </div>
   );
 }

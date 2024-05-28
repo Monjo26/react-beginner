@@ -88,6 +88,8 @@ import Counter from "./components/useMemo/Counter";
 import FocusInput from "./components/useRef/FocusInput";
 import ClassTimer from "./components/useRef/ClassTimer";
 import HookTimer from "./components/useRef/HookTimer";
+import DocTitleOne from "./components/custom/DocTitleOne";
+import DocTitleTwo from "./components/custom/DocTitleTwo";
 
 function App() {
   return (
@@ -97,8 +99,10 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <Counter /> */}
       {/* <FocusInput /> */}
-      <ClassTimer />
-      <HookTimer />
+      {/* <ClassTimer />
+      <HookTimer /> */}
+      <DocTitleOne />
+      <DocTitleTwo />
     </div>
   );
 }

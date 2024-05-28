@@ -87,6 +87,7 @@ import ParentComponent from "./components/useCallBack/ParentComponent";
 import Counter from "./components/useMemo/Counter";
 import FocusInput from "./components/useRef/FocusInput";
 import ClassTimer from "./components/useRef/ClassTimer";
+import HookTimer from "./components/useRef/HookTimer";
 
 function App() {
   return (
@@ -97,6 +98,7 @@ function App() {
       {/* <Counter /> */}
       {/* <FocusInput /> */}
       <ClassTimer />
+      <HookTimer />
     </div>
   );
 }

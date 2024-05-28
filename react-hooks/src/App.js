@@ -86,6 +86,7 @@ import DataFetchingTwo from "./components/useReducer/DataFetchingTwo";
 import ParentComponent from "./components/useCallBack/ParentComponent";
 import Counter from "./components/useMemo/Counter";
 import FocusInput from "./components/useRef/FocusInput";
+import ClassTimer from "./components/useRef/ClassTimer";
 
 function App() {
   return (
@@ -94,7 +95,8 @@ function App() {
       {/* <DataFetchingTwo /> */}
       {/* <ParentComponent /> */}
       {/* <Counter /> */}
-      <FocusInput />
+      {/* <FocusInput /> */}
+      <ClassTimer />
     </div>
   );
 }

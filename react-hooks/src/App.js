@@ -90,6 +90,8 @@ import ClassTimer from "./components/useRef/ClassTimer";
 import HookTimer from "./components/useRef/HookTimer";
 import DocTitleOne from "./components/custom/DocTitleOne";
 import DocTitleTwo from "./components/custom/DocTitleTwo";
+import CounterOne from "./components/custom/CounterOne";
+import CounterTwo from "./components/custom/CounterTwo";
 
 function App() {
   return (
@@ -101,8 +103,10 @@ function App() {
       {/* <FocusInput /> */}
       {/* <ClassTimer />
       <HookTimer /> */}
-      <DocTitleOne />
-      <DocTitleTwo />
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
+      <CounterOne />
+      <CounterTwo />
     </div>
   );
 }
